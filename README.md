@@ -12,8 +12,8 @@ Marketing webpage made by Bootstrap5
 
 ![website](./image/visual1.png)
 
-![website](./image/visual2.png.png)
+![website](./image/visual2.png)
 
-![website](./image/visual3.png.png)
+![website](./image/visual3.png)
 
 ![website](./image/visual4.png)
