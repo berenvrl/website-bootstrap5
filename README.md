@@ -10,10 +10,12 @@ Marketing webpage made by Bootstrap5
 
 ![website](./image/website-video.gif)
 
-![website](./image/visual1.png)
+# Visual of the project pages
 
-![website](./image/visual2.png)
+![main page-header page](./image/visual1.png)
 
-![website](./image/visual3.png)
+![session-1-Vinery](./image/visual2.png)
 
-![website](./image/visual4.png)
+![session-2-Wine Information](./image/visual3.png)
+
+![session-3-Events](./image/visual4.png)
