@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>B Wines</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark position-sticky top-0">
+      <div class="container-fluid">
+        <ul class="navbar-nav w-100 d-flex justify-content-evenly align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" style="color:#eee2dc">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section--1" style="color:#eee2dc">B Winery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section--2" style="color:#eee2dc">Our Wines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1">
+              <iframe
+                src="https://giphy.com/embed/pzGIuR1UeI2oFhyqP1"
+                width="80"
+                height="80"
+                frameborder="0"
+                class="giphy-embed rounded-circle"
+                allowfullscreen
+              ></iframe>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section--3" style="color:#eee2dc">Events</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" role="button" data-bs-toggle="modal" data-bs-target="#myModalshop" aria-labelledby="myModalLabelShop" style="color:#eee2dc">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#footerid"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="color:#eee2dc"
+              >Contact</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#footer" onclick="scrollToFooter()">Us on social media</a></li>
+              <li><a class="dropdown-item" href="#" onclick="scrollToFooter()">Send us Email</a></li>
+              <li><a href="#" class="dropdown-item" onclick="scrollToFooter()">Get Location</a></li>
+              <hr />
+              <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#myModal" aria-labelledBy="myModalLabel">Send and inquery</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- alert for visitors -->
+    <div class="container-fluid d-flex flex-column justify-content-center position-fixed mt-2 alert-visitors">
+      <div class="alert alert-danger alert-dismissible py-4">
+        <strong>Visitors under 18 and pets</strong> are unfortunately not
+        allowed to join tasting sessions
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="alert alert-dark alert-dismissible py-4">
+        For Group of 8 of people,
+        <strong> reservation is required prior to visit</strong>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <!-- end of alert for visitors -->
+    <header class="header container-fluid d-flex flex-column align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center" >
+            <div class="carousel slide pb-0 d-flex align-items-center" id="mySlide" data-bs-ride="carousel" style="overflow: hidden; position:relative;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 panel align-self-center" style="
+                      background-image: url('https://images.unsplash.com/photo-1596142332133-327e2a0ff006?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dmluZXlhcmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+                      "></div>
+                      <div class="col-md-6 align-self-center p-3 p-lg-5 header-text ">
+                        <blockquote class="blockquote">
+                          <p>Wine is bottler poetry
+                          </p>
+                          <footer class="blockquote-footer">Robert Louis Stevenson</footer>
+                        </blockquote>
+                        <p class="lead mt-3">Welcome to B Winery.
+                        Discover the art of winemaking and indulge in exquisite flavors at our winery. Nestled in the heart of Aegean Region, our family-owned winery is dedicated to crafting exceptional wines that showcase the unique terroir of our vineyards.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 panel align-self-center" style="
+                      background-image: url('https://media.istockphoto.com/id/1428885970/tr/foto%C4%9Fraf/margaret-river-vineyard.webp?b=1&s=170667a&w=0&k=20&c=hzz12GlHXIkWfKADunpAPpnPQh1Put3_4LB1PiMMGLk=');
+                      "></div>
+                      <div class="col-md-6 align-self-center p-3 p-lg-5 header-text">
+                        <p class="lead mb-3"> With 250 years of experience in the industry, our winemakers combine traditional techniques with modern innovation to produce wines of exceptional quality and character. From hand-picking the finest grapes to meticulously nurturing each bottle, we take pride in every step of the winemaking process.</p>
+                        <blockquote class="blockquote">
+                        <p>Making good wine is a skill; Making fine wine is an art</p>
+                        <footer class="blockquote-footer">Robert Mondavi</footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 panel align-self-center" style="
+                      background-image: url('https://images.unsplash.com/photo-1504868173-db962b7c3757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdpbmUlMjBzZW5zb3J5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+                      ">
+                      </div>
+                      <div class="col-md-6 align-self-center p-3 p-lg-5 header-text">
+                        <blockquote class="blockquote">
+                          <p>My only regret in life is that I didn't drink more wine
+                          </p>
+                          <footer class="blockquote-footer">Ernest Hemingway</footer>
+                        </blockquote>
+                        <p class="lead mt-3">Located in the picturesque Aegean Region, our vines thrive in the ideal climate and rich soils, imparting distinct flavors and aromas to our wines. We believe in sustainable practices and strive to cultivate our vineyards in harmony with nature, respecting and preserving the environment.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 panel align-self-center" style="
+                      background-image: url('https://images.unsplash.com/photo-1615780324244-29b71ae12f7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdpbmVyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');
+                      "></div>
+                      <div class="col-md-6 p-3 p-lg-5  align-self-center header-text">
+                      <p class="lead">Indulge in a sensory journey with our diverse range of wines. From vibrant whites to bold reds, our portfolio offers something for every palate. Each bottle tells a story of craftsmanship, passion, and devotion to the art of winemaking. Whether you're a wine connoisseur or a novice enthusiast, our knowledgeable staff is here to guide you through our selection and help you discover your new favorite wine.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 panel align-self-center" style="
+                      background-image: url('https://plus.unsplash.com/premium_photo-1661506383340-4deb1242daa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2luZSUyMHRhc3Rpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+                      "></div>
+                      <div class="col-md-6 align-self-center p-3 p-lg-5 header-text">
+                      <p class="lead">Experience the magic of our winery firsthand through our guided tours and wine tastings. Immerse yourself in the captivating beauty of our vineyards as our expert guides walk you through the winemaking process, from grape to glass. Sample a selection of our finest wines, learn about their characteristics, and gain insights into food pairings and cellaring. Our tasting room offers a warm and inviting atmosphere, perfect for creating unforgettable memories with friends, family, or colleagues.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6 panel align-self-center" style="
+                      background-image: url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2luZXJ5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+                      "></div>
+                      <div class="col-md-6 align-self-center p-3 p-lg-5 header-text">
+                      <p class="lead">We invite you to visit our winery and experience the charm and elegance that defines Winery B. Whether you're seeking a delightful weekend getaway, planning a private event, or simply looking to enjoy a bottle of wine in a serene setting, our doors are open to you. Join us and savor the art of winemaking in a truly remarkable setting.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- carousel-inner -->
+            </div>
+            <!-- carousel slide end -->
+          </div>
+        </div>
+      </div>
+      <a href="#section--1" class="btn--text text-decoration-none" role="button">Learn more &DownArrow;</a>
+    </header>
+    <section class="section" id="section--1">
+      <div class="container p-3 mt-2 mb-5">
+        <p class="h2 mb-3 text-uppercase">B Winery</p>
+        <p class="h3 lh-3">About Our Vineyards</p>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <img
+            src="https://images.unsplash.com/photo-1572913017567-02f0649bc4fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2luZXJ5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="wine cellar"
+            class="img-thumbnail"
+          />
+        </div>
+        <div class="col-md-6">
+          <div
+            class="d-flex align-items-center justify-content-center aboutw__icon rounded-circle"
+          >
+            <img src="../image/barrel-icon.svg" alt="barrel icon" />
+          </div>
+          <p class="h5 mt-4">Preserving the Essence of Time</p>
+          <p class="lh-lg">
+            At B Winery, we take great pride in our meticulously curated wine cellar, where we age and store our most prized vintages. Step into our cellar and embark on a journey through time and taste, surrounded by the rich aromas and the allure of aged wines.
+            Our wine cellar is a sanctuary, crafted to maintain the ideal conditions for aging and nurturing our wines. Temperature, humidity, and lighting are carefully controlled to ensure that each bottle evolves gracefully, preserving their complex flavors and unlocking the true potential of every vintage.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center justify-content-center aboutw__icon rounded-circle">
+            <img src="../image/bottle-icon.svg" />
+          </div>
+          <p class="h5 mt-4">Highest Quality Grapes</p>
+          <p class="lh-lg">
+            Our vineyards are carefully selected and meticulously maintained to ensure the highest quality grapes. Located in the picturesque Aegean Region, our vines thrive in the ideal climate and rich soils, imparting distinct flavors and aromas to our wines. We believe in sustainable practices and strive to cultivate our vineyards in harmony with nature, respecting and preserving the environment.
+          </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <img
+          src="https://images.unsplash.com/photo-1593535388526-a6b8556c5351?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2luZXJ5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+          alt="vineyard visual"
+          class="img-thumbnail"
+        />
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <img
+          src="https://images.unsplash.com/photo-1637181156153-bedd1098f8c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdpbmVyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="vineyard green"
+          class="img-thumbnail"
+        />
+        </div>
+        <div class="col-md-6">
+          <div
+          class="aboutw__icon rounded-circle d-flex align-items-center justify-content-center"
+        >
+          <img src="../image/grape-icon.svg" alt="grape icon" />
+        </div>
+        <p class="h5 mt-4">Winemaking Philosophy</p>
+        <p class="lh-lg">
+          At B Winery, we believe that great wines are born from a harmonious blend of art and science. Our experienced winemakers meticulously handcraft each bottle, paying meticulous attention to detail at every stage of the winemaking process. From hand-harvesting the grapes to carefully aging the wine in oak barrels, we strive for perfection in every sip.
+        </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div
+            class="aboutw__icon rounded-circle d-flex align-items-center justify-content-center"
+          >
+            <img src="../image/bar.svg" alt="bar icon" />
+          </div>
+          <p class="h5 mt-4">Visit Us</p>
+          <p class="lh-lg">
+            We invite you to visit B Winery and immerse yourself in the world of wine. Take a stroll through our vineyards, indulge in a wine tasting experience, and savor the tranquility of our surroundings. Whether you're a wine enthusiast or simply looking for a peaceful escape, our doors are open to welcome you.
+          </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center ">
+          <img
+          src="https://images.unsplash.com/photo-1601207683278-40ed45b5ba2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmVyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="vineyard activity"
+          class="img-thumbnail"
+        />
+        </div>
+      </div>
+    </section>
+    <section class="section" id="section--2">
+      <div class="container p-3 mt-2 mb-5">
+        <p class="h2 mb-3 text-uppercase">Our Wines</p>
+        <h3 class="h3 lh-3">Learn Our Wines</h3>
+      </div>
+      <div class="col d-flex flex-column justify-content-center align-items-center">
+        <ul class="nav nav-pills pb-4" role="tablist">
+          <li class="nav-item p-1" role="presentation">
+            <button
+              type="button"
+              class="nav-link active rounded-5"
+              id="Variety"
+              data-bs-toggle="pill"
+              data-bs-target="#variety"
+              role="tab"
+              aria-controls="variety"
+              aria-selected="true"
+            >
+              Variety
+            </button>
+          </li>
+          <li class="nav-item p-1" role="presentation">
+            <button
+              type="button"
+              class="nav-link rounded-5"
+              id="Category"
+              data-bs-toggle="pill"
+              data-bs-target="#category"
+              role="tab"
+              aria-controls="category"
+              aria-selected="false"
+            >
+              Category
+            </button>
+          </li>
+          <li class="nav-item p-1" role="presentation">
+            <button
+              type="button"
+              class="nav-link rounded-5"
+              id="Vintage"
+              data-bs-toggle="pill"
+              data-bs-target="#vintage"
+              role="tab"
+              aria-controls="vintage"
+              aria-selected="false"
+            >
+              Vintage
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content py-2 w-75 tabtab overflow-hidden">
+          <div
+            class="tab-pane fade show active p-3 "
+            id="variety"
+            role="tabpanel"
+            aria-labelledby="Variety"
+          >
+          <div class="tabdiv">
+            <p class="fst-italic p-2 text">
+              At Winery B, we celebrate the art of winemaking by offering a diverse selection of wine varieties, each with its own unique character and flavor profile. From classic varietals to innovative blends, our wines embody the essence of our vineyards and the passion of our winemakers. Our categories: Chardonnay: Chardonnay, Cabernet Sauvignon, Pinot Noir, Merlot, Sauvignon Blanc, Syrah/Shiraz and Sparkling Wine.
+            </p>
+          </div>
+          </div>
+          <div
+            class="tab-pane fade show p-3"
+            id="category"
+            role="tabpanel"
+            aria-labelledby="Category"
+          >
+          <div class="tabdiv">
+            <p class="fst-italic p-2 text">
+              At Winery B, we take pride in offering a diverse range of wine categories, each designed to cater to different preferences and occasions. From crisp whites to bold reds and everything in between, our wines are crafted with passion and precision to ensure a memorable experience for every palate. Our categories: Classic Reds, Elegant Whites, Rosé, Sparkling Wines, Dessert Wines.
+            </p>
+          </div>
+          </div>
+          <div
+            class="tab-pane fade show p-3"
+            id="vintage"
+            role="tabpanel"
+            aria-labelledby="Vintage"
+          >
+          <div class="tabdiv">
+            <p class="fst-italic p-2 text">
+              At Winery B, we believe that each vintage tells a unique story. Our passionate winemakers carefully nurture and craft our wines, capturing the essence of the growing season and the character of the vineyard. Explore our exceptional vintages and experience the nuances of each year's harvest. Each vintage is a moment frozen in time, capturing the unique conditions and artistry of the winemaker. We invite you to explore our vintage offerings, as you embark on a journey through the years. Discover the variations, complexities, and nuances that make each vintage an exquisite expression of our vineyard's terroir.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="section--3">
+      <div class="container p-3 mt-2 mb-3">
+        <p class="h2 mb-3 text-uppercase">Events</p>
+        <h3 class="h3 lh-3">Learn Our Events</h3>
+      </div>
+      <!-- carousel -->
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="slidecol m-2 col d-flex justify-content-center align-items-center p-3">
+            <div id="carouselExampleIndicators" class="carousel slide align-self-center position-relative" data-bs-ride="carousel">
+              <div class="carousel-indicators position-absolute">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <figure class="figure">
+                    <img src="../image/wine2.jpg" class="d-block w-100 img-fluid figure-img p-1" alt="slide 2" >
+                  </figure>
+                  <figcaption class="figure-caption">We believe that wine is meant to be shared and enjoyed during life's most memorable moments. </figcaption>
+                </div>
+                <div class="carousel-item">
+                  <figure class="figure">
+                    <img src="../image/wine1.jpg" class="d-block w-100 img-fluid figure-img p-1" alt="slide 1">
+                  </figure>
+                  <figcaption class="figure-caption">Experience the charm of Winery B by visiting our welcoming tasting room.</figcaption>
+                </div>
+                <div class="carousel-item">
+                  <figure class="figure">
+                    <img src="../image/wine3.jpg" class="d-block w-100 img-fluid figure-img p-1" alt="slide 2">
+                  </figure>
+                  <figcaption class="figure-caption">Experience the magic of a vineyard wedding. </figcaption>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footerid">
+      <div class="container-fluid d-flex flex-column align-items-center justify-content-center" style="background-color: #333;">
+        <ul class="nav p-3 fs-6 d-flex justify-content-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link active text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section--1" class="nav-link text-white">B Winery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section--2" class="nav-link text-white ">Our Wines</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section--3" class="nav-link text-white ">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white ">Contact</a>
+          </li>
+        </ul>
+        <div class="container d-flex flex-column justify-content-center align-items-center m-3">
+          <p class="text-white">Adress: blabla street No 23 Izmir/ Turkey </p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <i class="bi bi-instagram fs-3 text-white" style="cursor: pointer;"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="bi bi-envelope-at fs-3 text-white" style="cursor: pointer;"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="bi bi-linkedin fs-3 text-white" style="cursor: pointer;"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="bi bi-telephone fs-3 text-white" style="cursor: pointer;"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__map container d-flex justify-content-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5915.546417966544!2d27.14639887689093!3d38.42171715832366!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2sde!4v1689056067279!5m2!1str!2sde"
+            class="map"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>        
+        <p class="text-white mt-5">&copy; Copyright by Wine B, 2023</p>
+        </div>
+      </div>
+    </footer>
+    <!-- modal -->
+    <div class="modal fade" tabindex="-1" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel" aria-hidden="true" >Send an Inquiry</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="firstnamelastname" class="col-form-label">First Name</label>
+                <input type="text" class="form-control" id="firstnamelastname" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label" >Your Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+    <!-- modal shop -->
+    <div class="modal fade" tabindex="-1" id="myModalshop">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabelShop" aria-hidden="true" >Coming Soon! 🍷🛒</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>We are working on bringing you an amazing shopping experience. Stay tuned!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

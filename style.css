@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar,
+.alert-visitors {
+  z-index: 999;
+}
+.navbar {
+  font-size: 1.3rem;
+  background-color: #333;
+}
+.header {
+  padding: 2.5rem 3rem 0 3rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.panel {
+  padding: 0;
+  height: 70vh;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+.btn--text {
+  background: none;
+  font-size: 1.3rem;
+  font-family: inherit;
+  border: none;
+  border-bottom: 2px solid currentColor;
+  width: fit-content;
+  transition: all 0.3s;
+  color: #bc4639;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.section {
+  padding: 7rem 3rem;
+  transition: transform 1s, opacity 1s;
+  margin: 3rem;
+  border-top: 1px solid rgb(153, 153, 153, 0.4);
+}
+
+.aboutw__icon {
+  background-color: rgb(68, 68, 68, 0.9);
+  height: 5rem;
+  width: 5rem;
+}
+.aboutw__icon img {
+  height: 4rem;
+  width: 4rem;
+}
+.nav-pills .nav-link.active {
+  background-color: rgb(244, 48, 48);
+}
+.nav-pills .nav-link {
+  background-color: rgba(142, 24, 24, 0.829);
+  color: #fff;
+}
+.tabtab {
+  position: relative;
+  width: 45rem;
+  display: flex;
+  align-items: center;
+}
+.tabtab::before {
+  content: "";
+  position: absolute;
+  background-image: url("https://images.unsplash.com/photo-1517585867778-99d673b3a6c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdpbmUlMjBtYWtpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: -1;
+}
+.text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.tabdiv {
+  background-color: rgb(68, 68, 68, 0.5);
+}
+.slidecol {
+  max-width: 55%;
+}
+.carousel-control-prev {
+  left: -5rem;
+  border-radius: 50%;
+  background-color: #333;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 40%;
+}
+.carousel-control-next {
+  right: -5rem;
+  background-color: #333;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+}
+.carousel-indicators {
+  background-color: rgb(51, 51, 51, 0.5);
+  border-radius: 30px;
+  bottom: -15%;
+}
+.map {
+  height: 15rem;
+  width: 50rem;
+}
+
+/* media-queries */
+@media (max-width: 380px) {
+  .navbar {
+    font-size: 0.6rem;
+  }
+  .header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .panel {
+    height: 35vh;
+  }
+  .header-text p {
+    font-size: 0.7rem;
+  }
+  .section {
+    margin: 0;
+    padding: 0.3rem;
+  }
+  .btn--text {
+    margin-top: 0;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0.5rem;
+  }
+  .aboutw__icon {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .aboutw__icon img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .tabdiv p {
+    font-size: 15px;
+  }
+  .slidecol {
+    max-width: 72%;
+  }
+  .carousel-control-prev {
+    left: -2rem;
+    width: 2rem;
+    height: 2rem;
+    transform: translateY(-50%);
+  }
+  .carousel-control-next {
+    right: -2rem;
+    width: 2rem;
+    height: 2rem;
+    transform: translateY(-50%);
+  }
+  .carousel-indicators {
+    bottom: -20%;
+  }
+  .section {
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 767px) {
+  .tabdiv p {
+    font-size: 15px;
+  }
+  .navbar {
+    font-size: 0.8rem;
+  }
+  .section {
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+  .header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+  }
+  .panel {
+    height: 40vh;
+  }
+  .btn--text {
+    margin-top: 0;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  .carousel-control-prev {
+    left: -1rem;
+    width: 2rem;
+    height: 2rem;
+    transform: translateY(-50%);
+  }
+  .carousel-control-next {
+    right: -1rem;
+    width: 2rem;
+    height: 2rem;
+    transform: translateY(-50%);
+  }
+  .carousel-indicators {
+    bottom: -20%;
+  }
+  .slidecol {
+    max-width: 70%;
+  }
+}
+@media (min-width: 767px) and (max-width: 1199px) {
+  .tabdiv p {
+    font-size: 17px;
+  }
+  .navbar {
+    font-size: 1rem;
+  }
+  .slidecol {
+    max-width: 70%;
+  }
+  .header {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  .header-text p {
+    font-size: 1.2rem;
+  }
+  .btn--text {
+    margin-top: 0;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 4rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .tabdiv p {
+    font-size: 20px;
+  }
+  .header-text p {
+    font-size: 1.3rem;
+  }
+}
